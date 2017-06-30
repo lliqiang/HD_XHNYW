@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_laucher"
+    android:orientation="vertical"
+    tools:context="com.hengda.smart.xhnyw.d.ui.my.ChatActivity">
+
+    <com.hengda.smart.xhnyw.d.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="@string/mine_partner_title_group" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="37">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="14"
+                android:background="@drawable/bg_mine_chat_user_ll"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_avatar_label"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:src="@mipmap/ic_mine_chat_avatar" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_basic_information"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/iv_avatar_label"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/tv_user_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_user_name"
+                            android:paddingTop="4dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="4dp"
+                            android:src="@mipmap/ic_mine_chat_edit" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_group_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rl_basic_information"
+                        android:layout_toEndOf="@id/iv_avatar_label"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/mine_common_text_color"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorBrouse" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:overScrollMode="never" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorBrouse" />
+
+                <Button
+                    android:id="@+id/btn_log_out"
+                    android:layout_width="160dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_mine_common_rounded_rectangle_btn"
+                    android:text="@string/mine_partner_log_out_group"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="23"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:overScrollMode="never"
+                    android:paddingBottom="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal">
+                    <!--
+                                       <LinearLayout
+                                           android:id="@+id/ll_record_btn"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="match_parent"
+                                           android:background="@drawable/bg_mine_common_rounded_rectangle_btn"
+                                           android:gravity="center_vertical"
+                                           android:orientation="horizontal">
+
+                                           <ImageView
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:paddingEnd="0dp"
+                                               android:paddingStart="8dp"
+                                               android:src="@mipmap/ic_mine_chat_record_white" />
+
+                                           <Button
+                                               android:id="@+id/tv_record_btn"
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:paddingEnd="8dp"
+                                               android:paddingStart="8dp"
+                                               android:text="@string/mine_partner_press_to_record"
+                                               android:textColor="@android:color/white"
+                                               android:textSize="20sp" />
+
+                                       </LinearLayout>-->
+
+                    <Button
+                        android:id="@+id/btn_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_mine_common_rounded_rectangle_btn"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@mipmap/ic_mine_chat_record_white"
+                        android:gravity="center_vertical"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:text="@string/mine_partner_press_to_record"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edt_send_content"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_mine_common_rounded_rectangle_content"
+                        android:paddingBottom="2dp"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:paddingTop="2dp"
+                        android:textColor="@color/colorBrouse"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btn_send"
+                        android:layout_width="120dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_mine_common_rounded_rectangle_btn"
+                        android:text="@string/common_send"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

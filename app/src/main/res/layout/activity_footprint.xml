@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_laucher"
+    android:orientation="vertical"
+    tools:context="com.hengda.smart.xhnyw.d.ui.my.FootprintActivity">
+
+    <com.hengda.smart.xhnyw.d.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="@string/mine_label_menu_footprint" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp" />
+
+</LinearLayout>

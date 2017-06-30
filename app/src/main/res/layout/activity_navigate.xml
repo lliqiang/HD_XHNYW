@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_navigate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_common"
+    android:orientation="vertical"
+    tools:context="com.hengda.smart.xhnyw.d.ui.NavigateActivity">
+
+    <include
+        android:id="@+id/head_navigate"
+        layout="@layout/layout_head" />
+
+    <RelativeLayout
+        android:id="@+id/container_navigate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head_navigate" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/vr_navigate"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+
+        android:background="@mipmap/bg_navigate"
+        android:paddingRight="50dp"
+       />
+    <ImageView
+        android:id="@+id/back_navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/select_cancel_route"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="26dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

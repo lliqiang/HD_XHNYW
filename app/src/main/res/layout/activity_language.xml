@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_language"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@mipmap/bg_laucher"
+    tools:context="com.hengda.smart.xhnyw.d.ui.LanguageActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_language"
+        android:layout_marginLeft="100dp"
+       />
+<ImageView
+    android:id="@+id/img_chinese"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/img_cn"
+    android:gravity="center"
+    android:layout_marginLeft="200dp"
+    android:layout_marginRight="60dp"
+    android:layout_gravity="center"/>
+    <ImageView
+        android:id="@+id/img_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:src="@mipmap/img_en"
+        android:layout_gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="tranBlackDark">#66000000</color>
+    <color name="grey">#727272</color>
+    <color name="secondaryText">#66f034e4</color>
+    <color name="tranBlackLight">#22000000</color>
+    <color name="colorBrouse">#d0b05a</color>
+    <color name="mine_common_text_color">#D0B05A</color>
+    <color name="mine_silver_text_color">#B1B0B1</color>
+
+</resources>

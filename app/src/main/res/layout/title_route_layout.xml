@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@mipmap/bg_toute"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_head_expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_expand_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/img_dot_weight" />
+
+        <TextView
+            android:id="@+id/tv_expand_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/iv_expand_dot"
+            android:text="主体楼一层"
+            android:textColor="@color/colorBrouse" />
+
+        <ImageView
+            android:id="@+id/iv_expand_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:src="@mipmap/img_down_expand" />
+    </RelativeLayout>
+</LinearLayout>

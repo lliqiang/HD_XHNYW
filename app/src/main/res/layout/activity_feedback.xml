@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_laucher"
+    android:orientation="vertical"
+    tools:context="com.hengda.smart.xhnyw.d.ui.my.FeedbackActivity">
+
+    <com.hengda.smart.xhnyw.d.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="@string/mine_label_menu_feedback" />
+
+    <EditText
+        android:id="@+id/edt_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_mine_common_rounded_rectangle_content"
+        android:hint="@string/mine_feedback_hint_please_input_your_contact"
+        android:lines="1"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/colorBrouse"
+        android:textColorHint="@color/colorBrouse"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edt_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_mine_common_rounded_rectangle_content"
+        android:gravity="top"
+        android:hint="@string/mine_feedback_hint_please_input_your_feedback"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/colorBrouse"
+        android:textColorHint="@color/colorBrouse"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/bg_mine_common_rounded_rectangle_btn"
+        android:text="@string/common_send"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

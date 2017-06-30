@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hengda.smart.xhnyw.d">
+
+    <!-- 定位-蓝牙 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 监听网络的变化 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name = "android.permission.DISABLE_KEYGUARD"/>
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name=".app.HdApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_laucher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".ui.LaucherActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.BarCodeActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.CheckUpdateActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.LanguageActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.MapActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.ListGuideActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.IntroActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.ListDetailActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.SettingActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.PlayActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".ui.RouteActivity" />
+        <activity
+            android:name=".ui.LocActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.ArActivity"
+            android:screenOrientation="landscape" />
+        <activity
+
+            android:name=".ui.SearchActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.DialogActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/TransparentAct" />
+
+        <service android:name=".service.BleNoService" />
+
+        <activity
+            android:name=".ui.my.MineHomeActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.my.FeedbackActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.my.SystemMessageActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.my.AskHelpActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.my.PartnerActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".ui.my.FootprintActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.my.CommonWebActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.my.ChatActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.my.ChatSettingActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.my.FriendLocationActivity"
+            android:screenOrientation="landscape" />
+
+        <service android:name=".service.PushService" />
+
+        <activity
+            android:name=".ui.NavigateActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.DeviceActivity"
+            android:screenOrientation="landscape"></activity>
+
+        <activity android:name=".ui.AlarmActivity" />
+        <service android:name=".service.RfidNoService"/>
+
+    </application>
+
+</manifest>

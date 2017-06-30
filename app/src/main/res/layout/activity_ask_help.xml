@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/bg_laucher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hengda.smart.xhnyw.d.ui.my.AskHelpActivity">
+
+    <com.hengda.smart.xhnyw.d.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="@string/mine_label_menu_help" />
+
+    <LinearLayout
+        android:id="@+id/ll_content_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.hengda.smart.xhnyw.d.view.MineMenuItem
+            android:id="@+id/menu_help_get_lost"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon_src="@mipmap/ic_mine_menu_get_lose"
+            app:label_text="@string/mine_label_menu_help_get_lost" />
+
+        <com.hengda.smart.xhnyw.d.view.MineMenuItem
+            android:id="@+id/menu_help_injured"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon_src="@mipmap/ic_mine_menu_injured"
+            app:label_text="@string/mine_label_menu_help_injured" />
+
+        <com.hengda.smart.xhnyw.d.view.MineMenuItem
+            android:id="@+id/menu_help_other"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon_src="@mipmap/ic_mine_menu_other"
+            app:label_text="@string/mine_label_menu_help_other" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

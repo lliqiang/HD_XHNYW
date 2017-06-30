@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mine_common_rounded_rectangle_dialog">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:padding="12dp"
+        android:src="@drawable/ic_mine_common_dialog_close" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="48dp"
+        android:text="@string/mine_help_dialog_comfort"
+        android:textColor="@color/mine_common_text_color"
+        android:textSize="22sp" />
+
+</FrameLayout>

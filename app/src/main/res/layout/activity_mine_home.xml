@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_mine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_common"
+    android:orientation="vertical">
+
+    <com.hengda.smart.xhnyw.d.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="@string/mine_title_mine" />
+
+    <LinearLayout
+        android:id="@+id/ll_content_menu_column_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.hengda.smart.xhnyw.d.view.MineMenuItem
+            android:id="@+id/menu_my_footprint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon_src="@mipmap/img_trace"
+            app:label_text="@string/mine_label_menu_footprint" />
+
+        <com.hengda.smart.xhnyw.d.view.MineMenuItem
+            android:id="@+id/menu_my_partner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon_src="@mipmap/img_company"
+            app:label_text="@string/mine_label_menu_partner" />
+
+        <com.hengda.smart.xhnyw.d.view.MineMenuItem
+            android:id="@+id/menu_my_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon_src="@mipmap/img_message"
+            app:label_text="@string/mine_label_menu_message" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content_menu_column_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.hengda.smart.xhnyw.d.view.MineMenuItem
+            android:id="@+id/menu_my_help"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon_src="@mipmap/img_help"
+            app:label_text="@string/mine_label_menu_help" />
+
+        <com.hengda.smart.xhnyw.d.view.MineMenuItem
+            android:id="@+id/menu_my_feedback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon_src="@mipmap/img_edit"
+            app:label_text="@string/mine_label_menu_feedback" />
+
+        <com.hengda.smart.xhnyw.d.view.MineMenuItem
+            android:id="@+id/menu_my_questionnaire"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon_src="@mipmap/ic_mine_menu_questionnaire"
+            app:label_text="@string/mine_label_menu_questionnaire" />
+
+    </LinearLayout>
+
+</LinearLayout>

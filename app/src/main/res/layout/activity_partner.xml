@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_laucher"
+    android:orientation="vertical"
+    tools:context="com.hengda.smart.xhnyw.d.ui.my.PartnerActivity">
+
+    <com.hengda.smart.xhnyw.d.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="@string/mine_label_menu_partner" />
+
+    <LinearLayout
+        android:id="@+id/ll_content_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.hengda.smart.xhnyw.d.view.MineMenuItem
+            android:id="@+id/menu_partner_build_group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon_src="@mipmap/ic_mine_menu_build_group"
+            app:label_text="@string/mine_label_menu_partner_build_group" />
+
+        <com.hengda.smart.xhnyw.d.view.MineMenuItem
+            android:id="@+id/menu_partner_join_group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon_src="@mipmap/ic_mine_menu_join_group"
+            app:label_text="@string/mine_label_menu_partner_join_group" />
+
+    </LinearLayout>
+
+</LinearLayout>

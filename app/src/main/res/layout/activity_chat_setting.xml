@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_laucher"
+    android:orientation="vertical"
+    tools:context="com.hengda.smart.xhnyw.d.ui.my.ChatSettingActivity">
+
+    <com.hengda.smart.xhnyw.d.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="" />
+
+    <Space
+        android:id="@+id/spacer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/ll_group_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_group_name"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginStart="88dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_chat_setting_label_group_name"
+                android:textColor="@color/mine_common_text_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_group_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/mine_silver_text_color"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_mine_chat_setting_right_arrow" />
+
+        </LinearLayout>
+
+        <include layout="@layout/include_mine_chat_setting_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_group_id"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginStart="88dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_chat_setting_label_group_id"
+                android:textColor="@color/mine_common_text_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_group_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/mine_silver_text_color"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_mine_chat_setting_right_arrow" />
+
+        </LinearLayout>
+
+        <include layout="@layout/include_mine_chat_setting_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_group_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginStart="88dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_chat_setting_label_group_introduction"
+                android:textColor="@color/mine_common_text_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_group_introduction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/mine_silver_text_color"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_mine_chat_setting_right_arrow" />
+
+        </LinearLayout>
+
+        <include layout="@layout/include_mine_chat_setting_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_add_group_need_certification"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginStart="88dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_chat_setting_label_certification"
+                android:textColor="@color/mine_common_text_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/mine_silver_text_color"
+                android:textSize="20sp" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/switch_button_need_certification"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                app:kswBackColor="@color/colorBrouse"
+                app:kswThumbColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <include layout="@layout/include_mine_chat_setting_divider" />
+
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/ll_my_nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginStart="88dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_chat_setting_label_my_nick_name"
+            android:textColor="@color/mine_common_text_color"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_my_nick_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/mine_silver_text_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_mine_chat_setting_right_arrow" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_mine_chat_setting_divider" />
+
+    <LinearLayout
+        android:id="@+id/ll_my_need_show_nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginStart="88dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_chat_setting_label_show_nick_name"
+            android:textColor="@color/mine_common_text_color"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/mine_silver_text_color"
+            android:textSize="20sp" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/switch_button_nick_name"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            app:kswBackColor="@color/colorBrouse"
+            app:kswThumbColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_mine_chat_setting_divider" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

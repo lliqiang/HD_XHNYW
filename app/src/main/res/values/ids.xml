@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_mine_title_bar_title" type="id"/>
+    <item name="iv_mine_title_bar_back" type="id"/>
+    <item name="iv_mine_menu_item_background" type="id"/>
+    <item name="v_mine_menu_item_reference" type="id"/>
+</resources>

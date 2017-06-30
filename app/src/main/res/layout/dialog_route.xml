@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_route"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+
+    <LinearLayout
+        android:id="@+id/ll_route"
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/bg_route_map"
+
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg_dialog_route"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rbtn_route_fullview"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/select_rbtn"
+                android:button="@null"
+                android:buttonTint="@color/tranBlackDark"
+                android:textColor="@color/color_text_a_rg_main_menu"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbtn_hot_route"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/select_rbtn"
+                android:button="@null"
+                android:buttonTint="@color/tranBlackDark"
+                android:textColor="@color/color_text_a_rg_main_menu"
+                android:textSize="20sp" />
+
+
+
+            <RadioButton
+                android:id="@+id/rbtn_precious_route"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/select_rbtn"
+                android:button="@null"
+                android:buttonTint="@color/tranBlackDark"
+                android:textColor="@color/color_text_a_rg_main_menu"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbtn_fast_route"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/select_rbtn"
+                android:button="@null"
+                android:buttonTint="@color/tranBlackDark"
+                android:textColor="@color/color_text_a_rg_main_menu"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbtn_child_route"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/select_rbtn"
+                android:button="@null"
+                android:buttonTint="@color/tranBlackDark"
+                android:textColor="@color/color_text_a_rg_main_menu"
+                android:textSize="20sp" />
+
+
+
+
+
+
+        </RadioGroup>
+        <!--         <RadioButton
+                        android:id="@+id/rbtn_route_fullview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:buttonTint="@color/tranBlackDark"
+                        android:text="@string/fullview"
+                        android:textColor="@color/colorBrouse"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_hot_route"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:buttonTint="@color/tranBlackDark"
+                        android:text="@string/hot_route"
+                        android:textColor="@color/colorBrouse"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_precious_route"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:buttonTint="@color/tranBlackDark"
+                        android:text="@string/precious_route"
+                        android:textColor="@color/colorBrouse"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_fast_route"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:buttonTint="@color/tranBlackDark"
+                        android:text="@string/rate_route"
+                        android:textColor="@color/colorBrouse"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_child_route"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:buttonTint="@color/tranBlackDark"
+                        android:text="@string/child_route"
+                        android:textColor="@color/colorBrouse"
+                        android:textSize="20sp" />-->
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/line_route_map"
+            android:layout_marginBottom="30dp"/>
+
+        <FrameLayout
+            android:id="@+id/container_route"
+            android:layout_width="530dp"
+            android:layout_marginBottom="40dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cancel_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/ll_route"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/ll_route"
+        android:layout_marginRight="86dp"
+        android:layout_marginTop="30dp"
+        android:padding="8dp"
+        android:src="@drawable/select_cancel_route" />
+
+    <TextView
+        android:id="@+id/starGuide_route"
+        android:layout_width="150dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/select_btn_map"
+        android:gravity="center"
+        android:text="@string/star_guide"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+</RelativeLayout>

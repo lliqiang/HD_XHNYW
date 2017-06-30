@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_list_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_common"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.hengda.smart.xhnyw.d.ui.ListDetailActivity">
+
+    <include
+        android:id="@+id/head_list_detail"
+        layout="@layout/layout_head" />
+
+    <ImageView
+        android:id="@+id/iv_listDetail"
+        android:layout_width="550dp"
+        android:layout_height="370dp"
+        android:layout_below="@id/head_list_detail"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_listDetail"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/line_landscape" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/vr_listDetail"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:overScrollMode="always"
+       />
+</RelativeLayout>

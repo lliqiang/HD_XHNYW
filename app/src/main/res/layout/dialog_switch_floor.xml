@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:id="@+id/rl_switch_dialog"
+    android:background="@mipmap/bg_switch_map"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tip_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:text="检测到您位于主题层二楼，是否切换到该楼层"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/mine_common_text_color"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tip_switch"
+        android:layout_gravity="center_horizontal|bottom"
+       android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_sure_switch_dialog"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_btn_map"
+            android:layout_marginRight="80dp"
+            android:text="确定"
+            android:textSize="22sp"
+            android:textColor="@color/colorWhite"
+            />
+
+        <Button
+            android:id="@+id/btn_cancel_switch_dialog"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_btn_map"
+            android:text="取消"
+            android:textSize="22sp"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+</RelativeLayout>

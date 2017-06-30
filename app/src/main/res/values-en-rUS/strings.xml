@@ -1,0 +1,118 @@
+<resources>
+  <string name="app_name">西汉南越王</string>
+  <string name="fromat">格式有误</string>
+  <string name="install_text">请先安装测试程序</string>
+
+
+
+
+
+  <string name='device_no'>Serial No.:</string>
+
+  <string name='delete_success'>Deleted</string>
+
+
+
+
+
+
+
+  <string name='listguide'>List Guide</string>
+  <string name='inroduce'>About Us</string>
+
+  <string name='ar'>AR Interaction</string>
+  <string name='bathroom'>Restroom</string>
+  <string name='elevator'>Elevator</string>
+  <string name='escalator'>Escalator</string>
+  <string name='stairs'>Stairs</string>
+  <string name='shop'>Shops</string>
+  <string name='mine_title_mine'>Me</string>
+  <string name='mine_label_menu_footprint'>Tracks</string>
+  <string name='mine_label_menu_partner'>Companion</string>
+  <string name='mine_label_menu_help'>Help</string>
+  <string name='mine_label_menu_message'>Message</string>
+  <string name='mine_label_menu_feedback'>Feedback</string>
+  <string name='mine_label_menu_questionnaire'>Questionnaire</string>
+  <string name='mine_label_menu_help_get_lost'>Lost</string>
+  <string name='mine_label_menu_help_injured'>Injured</string>
+  <string name='mine_label_menu_help_other'>Others</string>
+  <string name='mine_label_menu_partner_build_group'>Create a group</string>
+  <string name='mine_label_menu_partner_join_group'>Join a group</string>
+  <string name='mine_help_dialog_comfort'>Message sent. Staff on the way.</string>
+  <string name='mine_feedback_hint_please_input_your_contact'>Leave your contact information</string>
+  <string name='mine_feedback_hint_please_input_your_feedback'>Leave a message</string>
+
+  <string name='mine_partner_title_group'>Group</string>
+  <string name='mine_partner_hint_please_input_group_id'>Enter group no.</string>
+  <string name='mine_partner_join_group_waiting'>Waiting for approval</string>
+  <string name='mine_partner_cancel_application'>Cancel application</string>
+  <string name='mine_partner_log_out_group'>Quit the group</string>
+  <string name='mine_partner_press_to_record'>Press and talk</string>
+  <string name='mine_chat_setting_label_group_name'>Group Name:</string>
+  <string name='mine_chat_setting_label_group_id'>Group ID:</string>
+  <string name='mine_chat_setting_label_my_nick_name'>My Name:</string>
+  <string name='mine_chat_setting_label_show_nick_name'>Name Displayed:</string>
+  <string name='mine_chat_setting_label_group_introduction'>About Group:</string>
+  <string name='mine_chat_setting_label_certification'>Group Verification:</string>
+  <string name='mine_chat_label_group_num'>Group No.:</string>
+  <string name='mine_chat_setting_dialog_hint_group_name'>Enter group name</string>
+  <string name='mine_chat_setting_dialog_hint_group_id'>Enter group ID</string>
+  <string name='mine_chat_setting_dialog_hint_group_desc'>Enter introduction to the group</string>
+  <string name='mine_chat_setting_dialog_hint_my_nick_name'>Enter a new name</string>
+  <string name="mine_chat_record_time_short">Too short</string>
+  <string name="mine_chat_record_cancel">Release to cancel</string>
+  <string name="mine_chat_label_user">User:</string>
+  <string name="mine_chat_label_want_to_join_group">Apply for joining the group</string>
+  <string name="mine_chat_join_request_refuse">Application rejected</string>
+  <string name="common_agree">Agree</string>
+  <string name="common_dis_agree">Reject</string>
+  <string name="common_ok">OK</string>
+  <string name="common_send">Send</string>
+  <string name="common_please_wait">Please wait </string>
+  <string name='hello_blank_fragment'>Hello blank fragment</string>
+  <string name='fullview'>Panorama Route</string>
+  <string name='hot_route'>Hot Route</string>
+  <string name='precious_route'>Highlight Route</string>
+  <string name='rate_route'>Fast Route</string>
+  <string name='child_route'>Family Route</string>
+  <string name='star_guide'>Start navigation</string>
+  <string name='sure'>Confirm</string>
+  <string name='cancel'>Cancel</string>
+  <string name='developing'>Under construction...</string>
+  <string name='input_exhibit'>Enter exhibit name</string>
+  <string name='nanyue_meseum'>The Nanyue-King Museum in the Western Han Dynasty</string>
+  <string name='switch_info'>Signal of another floor received. Do you want to switch to that floor?</string>
+  <string name="map_guide">Map Guide</string>
+  <string name="floor_one">1F in Main Building</string>
+  <string name="floor_two">2F in Main Building</string>
+  <string name="floor_three"> Tomb Site</string>
+  <string name="floor_four">Porcelain Pillows</string>
+  <string name="enter_exhibition">Enter </string>
+  <string name="going">...Loading</string>
+  <string name="no_device">This building is not available on this floor</string>
+    <string name="add_connect_error">Connect Error</string>
+  <string-array name="settings">
+
+    <item>自动讲解</item>
+    <item>智慧服务</item>
+    <item>节能模式</item>
+    <item>公众关机</item>
+    <item>自动模式</item>
+    <item>感应模式</item>
+    <item>报警模式</item>
+    <item>网络设置</item>
+    <item>服务器设置</item>
+    <item>RSSI设置</item>
+    <item>工程模式</item>
+    <item>测试平台</item>
+    <item>应用更新</item>
+    <item>清除资源</item>
+    <item>管理员密码</item>
+    <item>设备编号</item>
+    <item>版本信息</item>
+    <item>数据库更新</item>
+    <item>资源更新</item>
+  </string-array>
+
+
+</resources>
